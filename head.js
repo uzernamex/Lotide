@@ -1,4 +1,3 @@
-/*
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log("[✅⭐️💚] Assertion Passed: `${actual}` === `${expected}");
@@ -6,14 +5,14 @@ const assertEqual = function(actual, expected) {
     console.log("[❌🤬❌] Assertion Failed: `${actual} !== `${expected}");
   }
 };
-*/
+
 
 const head = function(array){
-
-  return array.slice(-1);
+  let i = array[0];
+  return i
 }
 
-console.log(head([4, 8, 2, 6]));
 
-// assertEqual(head([5,6,7]), 5);
-// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
