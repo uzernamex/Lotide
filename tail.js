@@ -8,8 +8,9 @@
 */
 
 const tail = function(array) {
-  const result = array.slice[1];
-  return result;
-}
+  for (let i = 0; i < array.length; i++) {
+    console.log(array.slice(1))
+  }
+};
 
-console.log (tail([5, 4, 2, 7, 2]));
+console.log(tail([5, 4, 2, 7, 2]));
