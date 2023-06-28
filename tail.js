@@ -7,7 +7,8 @@
 };
 */
 
-const tail = function(array){
-return array.slice[0]
+const tail = function(array) {
+  return array.slice[1];
 }
 
+console.log (tail([5, 4, 2, 7, 2]));
