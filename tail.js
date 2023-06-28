@@ -9,8 +9,9 @@
 
 const tail = function(array) {
   for (let i = 0; i < array.length; i++) {
-    console.log(array.slice(1))
-  }
+    const result = array.slice(1);
+  
+  return result}
 };
 
 console.log(tail([5, 4, 2, 7, 2]));
