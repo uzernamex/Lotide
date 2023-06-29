@@ -7,8 +7,11 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
+ for (let i = 0; i < array.length; i++) {
   const result = array.slice(1);
   return result
+ }
+ return []
 };
 
 // Test Case 1: Check the original array 
@@ -20,6 +23,11 @@ assertEqual(result1.length, 3); // original array should still have 3 elements!
 const result2 = [333, 808, 416, 905, 6]
 tail(result2); 
 assertEqual(result2.length, 5); 
+
+const result4 = [4]
+tail(result4)
+
+assertEqual(result4.length, 1);
 
 // Test Case 1: Check the returned array elements
 const result = tail(["Hello", "Lighthouse", "Labs"]);
@@ -34,3 +42,6 @@ assertEqual(result3[0], 99);
 assertEqual(result3[1], 1992); 
 assertEqual(result3[2], 42);
 assertEqual(result3[3], 24);
+
+const result5 = tail([8]); 
+assertEqual(result5.length, 0);
