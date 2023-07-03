@@ -18,3 +18,15 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 */
+
+const middle = function(arr) {
+  if (arr.length > 2) {
+    return [];
+}
+if (arr % 2 !== 0) {
+  arr / 2
+}
+for (element in arr) {
+  if 
+}
+}
