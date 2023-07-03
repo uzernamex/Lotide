@@ -1,9 +1,9 @@
 const without = function(source, itemsToRemove) {
   const result = [];
-  for (let i = 0; i < source.length; i++) {
-    if (source[i] = itemsToRemove) {
+  for (let i of source)
+  if (itemsToRemove[i]) {
       
     }
-  }
+  
 return result;
 }
