@@ -18,6 +18,13 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const flatten = function() {
-  return [];
+
+const flatten = function(arr) {
+  const newArray = [];
+  for (let i of arr) {
+    if (Array.isArray(i)) {
+      newArray.push(i)
+    }
+  }
+  return newArray;
 };
