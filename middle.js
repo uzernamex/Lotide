@@ -20,13 +20,15 @@ const eqArrays = function(arr1, arr2) {
 */
 
 const middle = function(arr) {
-  if (arr.length > 2) {
+  if (arr.length < 2) {
     return [];
 }
-if (arr % 2 !== 0) {
-  arr / 2
-}
-for (element in arr) {
-  if 
-}
-}
+if (arr.length > 2){
+  result = [];
+  for (element in arr) {
+    if (arr % 2 !== 0) {
+      (arr / 2 - 1)
+      return result.push(arr);
+    }
+  }
+};
