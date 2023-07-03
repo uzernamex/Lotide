@@ -23,12 +23,10 @@ const middle = function(arr) {
   if (arr.length < 2) {
     return [];
 }
-if (arr.length > 2){
-  result = [];
-  for (element in arr) {
-    if (arr % 2 !== 0) {
-      (arr / 2 - 1)
-      return result.push(arr);
-    }
-  }
+const middlemost = Math.floor(arr.length / 2)
+if (arr.length % 2 === 0) {
+  return [arr[middlemost -1], arr[middlemost]];
+} else {
+  return [arr[middlemost]];
+}
 };
