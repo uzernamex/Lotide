@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+/*const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log("[✅⭐️💚] Assertion Passed: `${actual}` === `${expected}");
   } else {
@@ -17,7 +17,7 @@ const eqArrays = function(arr1, arr2) {
   }
   return true;
 };
-
+*/
 
 const flatten = function(arr) {
   const newArray = [];
@@ -28,3 +28,5 @@ const flatten = function(arr) {
   }
   return newArray;
 };
+
+console.log(flatten[54, 98, [11, 700]]);
