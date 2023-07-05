@@ -15,17 +15,22 @@ const assertEqual = function(actual, expected) {
 //we can skip and not count spaces, as seen here.
 //can use for...of loops with strings.
 
+//item we are isolating gets returned in same line / console.loh
+// results gets own if statement + that is where you assign the key:value pairs
+//do this inside the for of loop
+//template is that of a function as an if-else statement 
+
 const countLetters = function(string) {
   const results = {};
-  for (const letter of string) {
-    if (letter !== " ") {      
-      return letter += 1; 
+  for (const stringLetter of string) {
+    if (results[stringLetter]) {// if results match the letter requested
+console.log (stringLetter += 1);
     } else {
-      return letter = 1;
-    }
-  
+      console.log(stringLetter);
+    } 
+
   }
-  console.log({ string: [letter] })
+return results;
 }
 
 console.log(countLetters('LHL'));
