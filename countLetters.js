@@ -15,8 +15,14 @@ const assertEqual = function(actual, expected) {
 //we can skip and not count spaces, as seen here.
 //can use for...of loops with strings.
 
-const countLetters = function() {
-  for ()
+const countLetters = function(string) {
+  for (letter of string) {
+    if (letter !== " ") {
+      return letter += 1; 
+    } else {
+      return letter = 1;
+    }
+  }
   return {}
 }
 
