@@ -21,12 +21,12 @@ const assertEqual = function(actual, expected) {
 //template is that of a function as an if-else statement 
 
 const countLetters = function(string) {
-  const results = {};    
-  for (let i = 0; i < string.length; i++) {
-    for (const stringLetter of string) {
-      console.log(stringLetter);
-      if (results[stringLetter]) {
-        results[stringLetter] += 1;
+  const results = {};
+  for (const stringLetter of string) {
+    if (results[stringLetter]) {
+      results[stringLetter] += 1;
+    } else {
+      results[stringLetter] = 1;
     }
       return stringLetter[i];
     }
