@@ -7,38 +7,21 @@ const assertEqual = function(actual, expected) {
 };
 
 
-
-// countOnly will be given an array and an object. 
-//It will return an object containing counts of everything that the input object listed.
-//As shown in the example image above, only keys which have a truthy value should be counted in the resulting object. 
-//All other strings (either set to false or not included at all in the object) should not be counted. 
-//if a particular string is meant to be counted but does not exist in the input array does not have to be included in the final count.
-//The function should report back how many instances of each string were found in the allItems array of strings.
-
-
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {
-
-
-// inside the loop, 
-// increment the counter for each item:
-//   set a property with that string key to:
-//     the value that was already there (or zero if nothing there) with 1 added to it.
-if (results[item]) {
-  results[item] += 1;
-} else {
-  results[item] = 1;
-}
-
-
+    if (itemsToCount[item]) {
+      if (results[item]) {
+        results[item] += 1;
+      } else {
+        results[item] = 1;
+      }
+    }
     console.log(item);
   }
   return results;
 };
-
   
-
 
 const firstNames = [
   "Karl",
