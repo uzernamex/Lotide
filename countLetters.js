@@ -6,10 +6,15 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//Perhaps this function could return an object where each unique character encountered in the string is a property of the object and the value for that property/key should be the number of occurrences for that character.
-//Remember that we can skip and not count spaces, as seen here.
-//You can use for...of loops with strings.
+//The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence.
+
+//We need it report back multiple numbers.
+
+//return an object where each unique character in the string is the KEY 
+//&& the number of occurrences of that character is the VALUE of that key.
+//we can skip and not count spaces, as seen here.
+//can use for...of loops with strings.
 
 const countLetters = function() {
-  
+return {}
 }
