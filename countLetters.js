@@ -25,8 +25,8 @@ const countLetters = function(string) {
   for (let i = 0; i < string.length; i++) {
     for (const stringLetter of string) {
       console.log(stringLetter);
-      if (string[stringLetter]) {
-        
+      if (results[stringLetter]) {
+        results[stringLetter] += 1;
     }
       return stringLetter[i];
     }
