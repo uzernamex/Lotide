@@ -16,14 +16,16 @@ const assertEqual = function(actual, expected) {
 //can use for...of loops with strings.
 
 const countLetters = function(string) {
-  for (letter of string) {
-    if (letter !== " ") {
+  const results = {};
+  for (const letter of string) {
+    if (letter !== " ") {      
       return letter += 1; 
     } else {
       return letter = 1;
     }
+  
   }
-  return {}
+  console.log({ string: [letter] })
 }
 
 console.log(countLetters('LHL'));
