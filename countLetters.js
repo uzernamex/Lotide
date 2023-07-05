@@ -21,13 +21,17 @@ const assertEqual = function(actual, expected) {
 //template is that of a function as an if-else statement 
 
 const countLetters = function(string) {
-  const results = {};
-  for (const stringLetter of string) {
-    if (string[stringLetter]) {
-    return results[stringLetter]
+  const results = {};    
+  for (let i = 0; i < string.length; i++) {
+    for (const stringLetter of string) {
+      console.log(stringLetter);
+      if (string[stringLetter]) {
+        
+    }
+      return stringLetter[i];
+    }
   }
-  }
-return results;
+  return results;
 };
 
 console.log(countLetters('LHL'));
