@@ -16,5 +16,9 @@ const assertEqual = function(actual, expected) {
 //can use for...of loops with strings.
 
 const countLetters = function() {
-return {}
+  for ()
+  return {}
 }
+
+console.log(countLetters('LHL'));
+console.log(countLetters("lighthouse in the house"));
