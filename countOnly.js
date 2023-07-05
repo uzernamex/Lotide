@@ -16,11 +16,15 @@ const assertEqual = function(actual, expected) {
 //The function should report back how many instances of each string were found in the allItems array of strings.
 
 
-
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
+  for (const item of allItems) {
+    console.log(item);
+  }
   return results;
-}
+};
+
+  
 
 
 const firstNames = [
