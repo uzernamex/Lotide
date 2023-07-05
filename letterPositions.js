@@ -9,7 +9,6 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log("[✅⭐️💚] The arrays are a match!💚")
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -22,13 +21,24 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
+//implement a new function which will return all the indices in the string 
+//where each character is found.
 
-assertEqual(eqArrays(["hello"], {[1, 2, 3]}), true); 
+//For each letter, multiple numbers may be needed to represent 
+//all the places in the string that it shows up.
 
-  
 
-const letterPositions = function() {
+
+
+const letterPositions = function(string) {
   const results = {};
+  for (let i = 0; i < string.length; i++) {
+    
+  }
   return results;
 };
 
+
+
+
+assertArraysEqual(letterPositions(("hello").e, [1]), true); 
