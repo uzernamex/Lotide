@@ -23,8 +23,9 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(string) {
   const results = {};
   for (const stringLetter of string) {
-    return results[stringLetter].push 
+    return results.push(stringLetter)
   }
+
 return results;
 };
 
