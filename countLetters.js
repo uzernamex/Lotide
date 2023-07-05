@@ -22,17 +22,11 @@ const assertEqual = function(actual, expected) {
 
 const countLetters = function(string) {
   const results = {};
-  for (const stringLetter of string) { // wrap in another if statement to get specific
-    if (string[stringLetter]) {
-      if (results[stringLetter]) {// if results match the letter requested
-        return (results[stringLetter] += 1);
-      } else {
-        return (results[stringLetter]);
-    } 
-  }
+  for (const stringLetter of string) {
+    return results[stringLetter].push 
   }
 return results;
-}
+};
 
 console.log(countLetters('LHL'));
 console.log(countLetters("lighthouse in the house"));
