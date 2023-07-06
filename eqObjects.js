@@ -1,3 +1,5 @@
+const { array } = require("yargs");
+
 const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
@@ -25,11 +27,14 @@ const eqObjects = function(object1, object2) {
   if (object1.length !== object2.length) {
     return false;
   }
+
   for (let i = 0; i < object1.length; i++) {
-    if (object1[key] === object2[key]) {
-      return true;
-    } else {
-      return false;
+    if (Array.isArray = true) {
+      if (object1[key] === object2[key]) {
+        return true;
+      } else {
+        return false;
+      }
     }
   }
   return result;
