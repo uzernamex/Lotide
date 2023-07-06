@@ -15,11 +15,10 @@ const findKeyByValue = function(object, value) {
   for (let key in object) {
     if (object[key] === value) {
       return value;
-
     } else {
       return undefined
     }
-  } 
+  }
   return result;
 };
 
