@@ -30,11 +30,15 @@ const eqArrays = function(arr1, arr2) {
 
 
 
-const letterPositions = function(string) {
+const letterPositions = function(sentence) {
   const results = {};
-  for (let i = 0; i < string.length; i++) {
-    
-  }
+  for (let position of sentence) {
+    if (sentence[position]) {
+      (sentence[position]) += 1; 
+    } else {
+      sentence[position] = 1; 
+    }
+  }  
   return results;
 };
 
