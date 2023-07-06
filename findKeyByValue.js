@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 //If no key with that given value is found, then it should return undefined.
 
 const findKeyByValue = function(object, value) {
-  const result = object[]
+  const result = [];
   for (let key in object) {
     if (object[key] === value) {
       return key;
@@ -22,3 +22,12 @@ const findKeyByValue = function(object, value) {
   } 
   return result;
 };
+
+const bestTVShowsByGenre = { 
+  sci_fi: "The Expanse",
+  comedy: "Brooklyn Nine-Nine",
+  drama:  "The Wire"
+};
+
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
