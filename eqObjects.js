@@ -13,7 +13,6 @@ const eqObjects = function(object1, object2) {
   for (let i = 0; i < object1[key].length; i++) {
     const objectOne = object1[key];
     const objectTwo = object2[key];
-
     if (Array.isArray(object1) && Array.isArray(object2)) {
       if (!eqArrays(objectOne, objectTwo)) {
         return false;
@@ -22,18 +21,13 @@ const eqObjects = function(object1, object2) {
       if (object1 !== object2) {
         return false;
       }
-
-      } (eqArrays(objectOne, objectTwo)) {
-          if (object1[key] === object2[key]) {
-            return true;
-          } else {
-            return false;
-          }
-        }
-      }
+    }
+    if (object1[key] === object2[key]) {
+      return true;
+    } else {
+      return false;
     }
   }
-  return result;
 };
 
 console.log(assertEqual(eqObjects({one: 1, two: 2, three: 3}), ({one: 1, two: 2, three: 3}), true));
