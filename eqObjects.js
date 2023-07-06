@@ -21,15 +21,13 @@ const eqArrays = function(arr1, arr2) {
 
 
 const eqObjects = function(object1, object2) {
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
   
-    const keys1 = Object.keys(object1);
-    const keys2 = Object.keys(object2);
-    
-    for (let key of keys1) {
-      const objectOne = object1[key];
-      const objectTwo = object2[key];
-      
-      if (Array.isArray(objectOne) && Array.isArray(objectTwo)) {
+  for (let key of keys1) {
+    const objectOne = object1[key];
+    const objectTwo = object2[key];
+    if (Array.isArray(objectOne) && Array.isArray(objectTwo)) {
       if (!eqArrays(objectOne, objectTwo)) {
         return false;
       }
@@ -42,7 +40,7 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-console.log(assertEqual(eqObjects({one: 1, two: 2, three: 3}), ({one: 1, two: 2, three: 3}), true));
+console.log(assertEqual(eqArrays(eqObjects({one: 1, two: 2, three: 3}), ({one: 1, two: 2, three: 3}), true)));
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject= { size: "medium", color: "red" };
