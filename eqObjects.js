@@ -1,16 +1,3 @@
-const { array } = require("yargs");
-
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log("[✅⭐️💚] Assertion Passed: `${actual}` === `${expected}");
@@ -23,11 +10,9 @@ const assertEqual = function(actual, expected) {
 // Else: false
 
 const eqObjects = function(object1, object2) {
-  const result = "";
-  if (object1.length !== object2.length) {
+  if (object1[key].length !== object2[key].length) {
     return false;
   }
-
   for (let i = 0; i < object1.length; i++) {
     if (Array.isArray = true) {
       const eqArrays = function(arr1, arr2) {
