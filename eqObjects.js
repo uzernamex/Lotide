@@ -5,12 +5,26 @@ const assertEqual = function(actual, expected) {
     console.log("[❌🤬❌] Assertion Failed: `${actual} !== `${expected}");
   }
 };
+const eqArrays = function(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+
+
 
 const eqObjects = function(object1, object2) {
   const objectOne = object1[key];
   const objectTwo = object2[key];
-  for (let i = 0; i < object1[key].length; i++) {
-    
+
+  for (let key of object1) {
     if (Array.isArray(object1) && Array.isArray(object2)) {
       if (!eqArrays(objectOne, objectTwo)) {
         return false;
@@ -20,13 +34,13 @@ const eqObjects = function(object1, object2) {
         return false;
       }
     }
+    }
     if (object1[key] === object2[key]) {
       return true;
     } else {
       return false;
     }
-  }
-};
+  };
 
 console.log(assertEqual(eqObjects({one: 1, two: 2, three: 3}), ({one: 1, two: 2, three: 3}), true));
 
