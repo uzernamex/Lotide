@@ -30,6 +30,17 @@ const eqObjects = function(object1, object2) {
 
   for (let i = 0; i < object1.length; i++) {
     if (Array.isArray = true) {
+      const eqArrays = function(arr1, arr2) {
+        if (arr1.length !== arr2.length) {
+          return false;
+        }
+        for (let i = 0; i < arr1.length; i++) {
+          if (arr1[i] !== arr2[i]) {
+            return false;
+          }
+        }
+        return true;
+      }
       if (object1[key] === object2[key]) {
         return true;
       } else {
