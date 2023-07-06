@@ -28,7 +28,6 @@ const eqArrays = function(arr1, arr2) {
 //all the places in the string that it shows up.
 
 
-
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
@@ -45,6 +44,5 @@ const letterPositions = function(sentence) {
 
 };
 
-
-
-assertArraysEqual(letterPositions(("hello").e, [1]), true); 
+//assertArraysEqual(letterPositions("hello".e, [1]), true); 
+console.log(assertArraysEqual(letterPositions("hello").e, [1]));
