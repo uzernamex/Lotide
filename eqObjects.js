@@ -21,10 +21,15 @@ const eqArrays = function(arr1, arr2) {
 
 
 const eqObjects = function(object1, object2) {
-  for (let key of keys1) {
-    const keys1 = object1.key;
-    const keys2 = object2.key;
-    if (Array.isArray(objectTwo) && Array.isArray(objectTwo)) {
+  
+    const keys1 = Object.keys(object1);
+    const keys2 = Object.keys(object2);
+    
+    for (let key of keys1) {
+      const objectOne = object1[key];
+      const objectTwo = object2[key];
+      
+      if (Array.isArray(objectOne) && Array.isArray(objectTwo)) {
       if (!eqArrays(objectOne, objectTwo)) {
         return false;
       }
@@ -33,13 +38,9 @@ const eqObjects = function(object1, object2) {
         return false;
       }
     }
-  }
-    //if (object1[key] === object2[key]) {
-      //return true;
-    //} else {
-      //return false;
-    //}
-  };
+  } 
+  return true;
+};
 
 console.log(assertEqual(eqObjects({one: 1, two: 2, three: 3}), ({one: 1, two: 2, three: 3}), true));
 
