@@ -8,6 +8,4 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log("[✅⭐️💚] The arrays are a match!💚")
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [1, 2, "3"]);
-assertArraysEqual([12, 2, 3], [1, 2, 3]);
+module.exports = assertArraysEqual; 
