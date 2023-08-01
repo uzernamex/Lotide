@@ -30,3 +30,5 @@ const middle = function(arr) {
     return [arr[middlemost]];
   }
 };
+
+module.exports = middle; 
