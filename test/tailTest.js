@@ -1,6 +1,18 @@
-const assertEqual = require('../assertEqual');
+const tailTest = require('../tail');
 const tail = require('../tail');
 
+const tailTest = require('../tail');
+
+describe("#tail", () => {
+  it("returns 2 for [1, 2, 3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), 2);
+  });
+});
+it("returns '5' for ['5']", () => {
+  assert.deepEqual(tail(['5']), '5'); 
+});
+
+/*
 
 // Test Case 1: Check the original array
 const result1 = ["Yo Yo", "Lighthouse", "Labs"];
@@ -33,3 +45,4 @@ assertEqual(result3[3], 24);
 
 const result5 = tail([8]);
 assertEqual(result5.length, 0);
+*/
