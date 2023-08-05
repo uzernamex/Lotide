@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@uzernamex/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of functionalities",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,10 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/uzernamex/lotide.git"
   },
-  "author": "",
+  "author": "M. A. Cumberbatch",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/uzernamex/lotide/issues"
   },
-  "homepage": "https://github.com/uzernamex/lotide#readme"
+  "homepage": "https://github.com/uzernamex/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
 }

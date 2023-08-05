@@ -1,25 +1,15 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("[✅⭐️💚] Assertion Passed: `${actual}` === `${expected}");
-  } else {
-    console.log("[❌🤬❌] Assertion Failed: `${actual} !== `${expected}");
-  }
-};
-
 const countLetters = function(string) {
   const results = {};
   for (const stringLetter of string) {
-    if (stringLetter !== " ") {
-      if (results[stringLetter]) {
+    if (stringLetter !== " ") { //if the element is not a space
+      if (results[stringLetter]) { //use if-condition to check if the results are a character and add to the count.
         results[stringLetter] += 1;
       } else {
-        results[stringLetter] = 1;
+        results[stringLetter] = 1; //if the previous conditions are not met do not add to the count.
       }
     }
   }
   return results;
 };
 
-
-console.log(countLetters('LHL'));
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;
