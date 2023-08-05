@@ -1,32 +1,11 @@
-/*const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log("[✅⭐️💚] Assertion Passed: `${actual}` === `${expected}");
-  } else {
-    console.log("[❌🤬❌] Assertion Failed: `${actual} !== `${expected}");
-  }
-};
-
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-*/
-
 const flatten = function(arr) {
-  const newArray = [];
-  for (let i of arr) {
-    if (Array.isArray(i)) {
-      newArray.push(i)
+  const newArray = []; //initialize empty array to store variables.
+  for (let i of arr) { // iterate through elements with for-of loop
+    if (Array.isArray(i)) { //if type is an array and variable is present in array..
+      newArray.push(i); //return as element in the new array
     }
   }
   return newArray;
 };
 
-console.log(flatten[54, 98, [11, 700]]);
+module.exports = flatten;
