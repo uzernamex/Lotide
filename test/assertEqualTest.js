@@ -1,16 +1,13 @@
-const assertEqualTest = require('../assertEqual');
+const assertEqual = require('../assertEqual');
 
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
 const assert = require('chai').assert;
-const assertArraysEqualTest = require('../middle');
+// const assertArraysEqualTest = require('../middle');
 
 describe("#assertEqual", () => {
-  it("returns 2 for [1, 2, 3]", () => {
-    assert.strictEqual(assertEqual([1, 2, 3]), 2);
+  it("returns true for 1, 1", () => {
+    assert.strictEqual(assertEqual(1, 1), true);
   });
-});
-it("returns '5' for ['5']", () => {
-  assert.strictEqual(assertEqual(['5']), '5'); 
 });
